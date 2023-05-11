@@ -18,10 +18,16 @@ let turn = "X"
 let cont = 0
 let listaprompt = [10, 11, 12, 13, 14, 15, 16, 17, 18]
 let vencedor = 'O'
+let track = 0
 
 function winContent() {
     divWin.style.display = 'flex';
     winText.innerText = "Vencedor: " + turn
+}
+
+function drawContent() {
+    divWin.style.display = 'flex';
+    winText.innerText = "Empate"
 }
 
 function windisplay(){
@@ -38,8 +44,27 @@ function windisplay(){
     
 }
 
+function drawdisplay(){
+    btn1.disabled = true;
+    btn2.disabled = true;
+    btn3.disabled = true;
+    btn4.disabled = true;
+    btn5.disabled = true;
+    btn6.disabled = true;
+    btn7.disabled = true;
+    btn8.disabled = true;
+    btn9.disabled = true;
+    drawContent()
+    
+}
+
 function wincondition(){
-    console.log(listaprompt);
+    track = 0
+    for(let i = 0; i < 9; i++){
+        if (listaprompt[i] == 1 || listaprompt[i] == 2){
+            track++;
+        }
+    }
     if (listaprompt[0] == listaprompt[1] && listaprompt[2] == listaprompt[0]){
         windisplay()              
     }
@@ -63,6 +88,9 @@ function wincondition(){
     }
     if (listaprompt[2] == listaprompt[4] && listaprompt[6] == listaprompt[2]){
         windisplay()
+    }
+    if (track == 9){
+        drawdisplay()
     }
 }
 
