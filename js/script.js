@@ -67,29 +67,21 @@ function wincondition(){
     }
     if (listaprompt[0] == listaprompt[1] && listaprompt[2] == listaprompt[0]){
         windisplay()              
-    }
-    if (listaprompt[3] == listaprompt[4] && listaprompt[5] == listaprompt[3]){
+    } else if (listaprompt[3] == listaprompt[4] && listaprompt[5] == listaprompt[3]){
         windisplay()
-    }
-    if (listaprompt[6] == listaprompt[7] && listaprompt[8] == listaprompt[6]){
+    } else if (listaprompt[6] == listaprompt[7] && listaprompt[8] == listaprompt[6]){
         windisplay()
-    }
-    if (listaprompt[0] == listaprompt[3] && listaprompt[6] == listaprompt[0]){
+    } else if (listaprompt[0] == listaprompt[3] && listaprompt[6] == listaprompt[0]){
         windisplay()
-    }
-    if (listaprompt[1] == listaprompt[4] && listaprompt[7] == listaprompt[1]){
+    } else if (listaprompt[1] == listaprompt[4] && listaprompt[7] == listaprompt[1]){
         windisplay()
-    }
-    if (listaprompt[2] == listaprompt[5] && listaprompt[8] == listaprompt[2]){
+    } else if (listaprompt[2] == listaprompt[5] && listaprompt[8] == listaprompt[2]){
         windisplay()
-    }
-    if (listaprompt[0] == listaprompt[4] && listaprompt[8] == listaprompt[0]){
+    } else if (listaprompt[0] == listaprompt[4] && listaprompt[8] == listaprompt[0]){
         windisplay()
-    }
-    if (listaprompt[2] == listaprompt[4] && listaprompt[6] == listaprompt[2]){
+    } else if (listaprompt[2] == listaprompt[4] && listaprompt[6] == listaprompt[2]){
         windisplay()
-    }
-    if (track == 9){
+    } else if(track == 9){
         drawdisplay()
     }
 }
